@@ -1,5 +1,4 @@
 window.onload = function() {
-    console.log("Page fully loaded, now running p2-all.js");
   gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
   // Target value and duration
   const targetValue = 100;
