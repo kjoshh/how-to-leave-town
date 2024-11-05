@@ -1318,11 +1318,11 @@ ScrollTrigger.create({
     let progress = self.progress;
 
     if (progress <= 0.2) {
-      audio11.volume = progress / 0.2;
+      audio11.volume = Math.min(progress / 0.2, 1); // Cap at 1
     } else if (progress > 0.2 && progress < 0.7) {
-      audio11.volume = 1;
+      audio11.volume = 1; // Set to maximum
     } else if (progress >= 0.7) {
-      audio11.volume = (1 - progress) / 0.1;
+      audio11.volume = Math.max((1 - progress) / 0.1, 0); // Ensure it's not less than 0
     }
   },
   onEnter: () => {
