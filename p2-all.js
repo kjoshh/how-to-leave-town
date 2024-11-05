@@ -1,4 +1,5 @@
-
+window.onload = function() {
+    console.log("Page fully loaded, now running p2-all.js");
   gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
   // Target value and duration
   const targetValue = 100;
@@ -1092,4 +1093,4 @@ ScrollTrigger.create({
     player4.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
   },
 });
-
+};
