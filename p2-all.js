@@ -1,4 +1,4 @@
-window.onload = function() {
+
   gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
   // Target value and duration
   const targetValue = 100;
@@ -900,196 +900,196 @@ window.onload = function() {
     }, 2100);
   });
 
-  
-let iframe21 = document.querySelector("#vimeo-video7");
-let player21 = new Vimeo.Player(iframe21);
+  let iframe21 = document.querySelector("#vimeo-video7");
+  let player21 = new Vimeo.Player(iframe21);
 
-// Initialize the video to be paused
+  // Initialize the video to be paused
 
-// ScrollTrigger to control video playback
-ScrollTrigger.create({
-  trigger: ".home-scroll_text-item.p9p2",
-  start: "-100% 50%",
-  end: "1200 50%",
-  scrub: 1,
-  onUpdate: (self) => {
-    let progress = self.progress; // Get the scroll progress from 0 to 1
+  // ScrollTrigger to control video playback
+  ScrollTrigger.create({
+    trigger: ".home-scroll_text-item.p9p2",
+    start: "-100% 50%",
+    end: "1200 50%",
+    scrub: 1,
+    onUpdate: (self) => {
+      let progress = self.progress; // Get the scroll progress from 0 to 1
 
-    // Set volume based on progress
-    if (progress <= 0.2) {
-      player21.setVolume(progress / 0.2); // Increase volume from 0 to 100% in the first 20%
-    } else if (progress < 0.5) {
-      player21.setVolume(1); // Keep volume at 100% from 20% to 80%
-    } else {
-      player21.setVolume((1 - progress) / 0.5); // Decrease volume from 100% to 0% from 80% to 100%
-    }
-  },
-  onEnter: () => {
-    player21.setMuted(false); // Unmute the video when entering the trigger area
-  },
-  onLeave: () => {
-    player21.setMuted(true);
-    player21.setVolume(0); // Mute and reset the volume when leaving the trigger area
-  },
-  onEnterBack: () => {
-    player21.setMuted(false); // Unmute the video when re-entering the trigger area from below
-  },
-  onLeaveBack: () => {
-    player21.setMuted(true);
-    player21.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
-  },
-});
+      // Set volume based on progress
+      if (progress <= 0.2) {
+        player21.setVolume(progress / 0.2); // Increase volume from 0 to 100% in the first 20%
+      } else if (progress < 0.5) {
+        player21.setVolume(1); // Keep volume at 100% from 20% to 80%
+      } else {
+        player21.setVolume((1 - progress) / 0.5); // Decrease volume from 100% to 0% from 80% to 100%
+      }
+    },
+    onEnter: () => {
+      player21.setMuted(false); // Unmute the video when entering the trigger area
+    },
+    onLeave: () => {
+      player21.setMuted(true);
+      player21.setVolume(0); // Mute and reset the volume when leaving the trigger area
+    },
+    onEnterBack: () => {
+      player21.setMuted(false); // Unmute the video when re-entering the trigger area from below
+    },
+    onLeaveBack: () => {
+      player21.setMuted(true);
+      player21.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
+    },
+  });
 
-let iframe22 = document.querySelector("#vimeo-video8");
-let player22 = new Vimeo.Player(iframe22);
+  let iframe22 = document.querySelector("#vimeo-video8");
+  let player22 = new Vimeo.Player(iframe22);
 
-// Initialize the video to be paused
+  // Initialize the video to be paused
 
-// ScrollTrigger to control video playback
-ScrollTrigger.create({
-  trigger: ".home-scroll_text-item.p13p2",
-  start: "-100% 50%",
-  end: "1200 50%",
-  scrub: 1,
-  onUpdate: (self) => {
-    let progress = self.progress; // Get the scroll progress from 0 to 1
+  // ScrollTrigger to control video playback
+  ScrollTrigger.create({
+    trigger: ".home-scroll_text-item.p13p2",
+    start: "-100% 50%",
+    end: "1200 50%",
+    scrub: 1,
+    onUpdate: (self) => {
+      let progress = self.progress; // Get the scroll progress from 0 to 1
 
-    // Set volume based on progress
-    if (progress <= 0.2) {
-      player22.setVolume(progress / 0.2); // Increase volume from 0 to 100% in the first 20%
-    } else if (progress < 0.5) {
-      player22.setVolume(1); // Keep volume at 100% from 20% to 80%
-    } else {
-      player22.setVolume((1 - progress) / 0.5); // Decrease volume from 100% to 0% from 80% to 100%
-    }
-  },
-  onEnter: () => {
-    player22.setMuted(false); // Unmute the video when entering the trigger area
-  },
-  onLeave: () => {
-    player22.setMuted(true);
-    player22.setVolume(0); // Mute and reset the volume when leaving the trigger area
-  },
-  onEnterBack: () => {
-    player22.setMuted(false); // Unmute the video when re-entering the trigger area from below
-  },
-  onLeaveBack: () => {
-    player22.setMuted(true);
-    player22.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
-  },
-});
+      // Set volume based on progress
+      if (progress <= 0.2) {
+        player22.setVolume(progress / 0.2); // Increase volume from 0 to 100% in the first 20%
+      } else if (progress < 0.5) {
+        player22.setVolume(1); // Keep volume at 100% from 20% to 80%
+      } else {
+        player22.setVolume((1 - progress) / 0.5); // Decrease volume from 100% to 0% from 80% to 100%
+      }
+    },
+    onEnter: () => {
+      player22.setMuted(false); // Unmute the video when entering the trigger area
+    },
+    onLeave: () => {
+      player22.setMuted(true);
+      player22.setVolume(0); // Mute and reset the volume when leaving the trigger area
+    },
+    onEnterBack: () => {
+      player22.setMuted(false); // Unmute the video when re-entering the trigger area from below
+    },
+    onLeaveBack: () => {
+      player22.setMuted(true);
+      player22.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
+    },
+  });
 
-let iframe23 = document.querySelector("#vimeo-video10");
-let player23 = new Vimeo.Player(iframe23);
+  let iframe23 = document.querySelector("#vimeo-video10");
+  let player23 = new Vimeo.Player(iframe23);
 
-// Initialize the video to be paused
+  // Initialize the video to be paused
 
-// ScrollTrigger to control video playback
-ScrollTrigger.create({
-  trigger: ".home-scroll_text-item.p18p2",
-  start: "-100% 50%",
-  end: "1200 50%",
-  scrub: 1,
-  onUpdate: (self) => {
-    let progress = self.progress; // Get the scroll progress from 0 to 1
+  // ScrollTrigger to control video playback
+  ScrollTrigger.create({
+    trigger: ".home-scroll_text-item.p18p2",
+    start: "-100% 50%",
+    end: "1200 50%",
+    scrub: 1,
+    onUpdate: (self) => {
+      let progress = self.progress; // Get the scroll progress from 0 to 1
 
-    // Set volume based on progress
-    if (progress <= 0.2) {
-      player23.setVolume(progress / 0.2); // Increase volume from 0 to 100% in the first 20%
-    } else if (progress < 0.5) {
-      player23.setVolume(1); // Keep volume at 100% from 20% to 80%
-    } else {
-      player23.setVolume((1 - progress) / 0.5); // Decrease volume from 100% to 0% from 80% to 100%
-    }
-  },
-  onEnter: () => {
-    player23.setMuted(false); // Unmute the video when entering the trigger area
-  },
-  onLeave: () => {
-    player23.setMuted(true);
-    player23.setVolume(0); // Mute and reset the volume when leaving the trigger area
-  },
-  onEnterBack: () => {
-    player23.setMuted(false); // Unmute the video when re-entering the trigger area from below
-  },
-  onLeaveBack: () => {
-    player23.setMuted(true);
-    player23.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
-  },
-});
+      // Set volume based on progress
+      if (progress <= 0.2) {
+        player23.setVolume(progress / 0.2); // Increase volume from 0 to 100% in the first 20%
+      } else if (progress < 0.5) {
+        player23.setVolume(1); // Keep volume at 100% from 20% to 80%
+      } else {
+        player23.setVolume((1 - progress) / 0.5); // Decrease volume from 100% to 0% from 80% to 100%
+      }
+    },
+    onEnter: () => {
+      player23.setMuted(false); // Unmute the video when entering the trigger area
+    },
+    onLeave: () => {
+      player23.setMuted(true);
+      player23.setVolume(0); // Mute and reset the volume when leaving the trigger area
+    },
+    onEnterBack: () => {
+      player23.setMuted(false); // Unmute the video when re-entering the trigger area from below
+    },
+    onLeaveBack: () => {
+      player23.setMuted(true);
+      player23.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
+    },
+  });
 
-let iframe24 = document.querySelector("#vimeo-video11");
-let player24 = new Vimeo.Player(iframe24);
+  let iframe24 = document.querySelector("#vimeo-video11");
+  let player24 = new Vimeo.Player(iframe24);
 
-// Initialize the video to be paused
+  // Initialize the video to be paused
 
-// ScrollTrigger to control video playback
-ScrollTrigger.create({
-  trigger: ".home-scroll_text-item.p20p2",
-  start: "-100% 50%",
-  end: "1200 50%",
-  scrub: 1,
-  onUpdate: (self) => {
-    let progress = self.progress; // Get the scroll progress from 0 to 1
+  // ScrollTrigger to control video playback
+  ScrollTrigger.create({
+    trigger: ".home-scroll_text-item.p20p2",
+    start: "-100% 50%",
+    end: "1200 50%",
+    scrub: 1,
+    onUpdate: (self) => {
+      let progress = self.progress; // Get the scroll progress from 0 to 1
 
-    // Set volume based on progress
-    if (progress <= 0.2) {
-      player24.setVolume(progress / 0.2); // Increase volume from 0 to 100% in the first 20%
-    } else if (progress < 0.5) {
-      player24.setVolume(1); // Keep volume at 100% from 20% to 80%
-    } else {
-      player24.setVolume((1 - progress) / 0.5); // Decrease volume from 100% to 0% from 80% to 100%
-    }
-  },
-  onEnter: () => {
-    player24.setMuted(false); // Unmute the video when entering the trigger area
-  },
-  onLeave: () => {
-    player24.setMuted(true);
-    player24.setVolume(0); // Mute and reset the volume when leaving the trigger area
-  },
-  onEnterBack: () => {
-    player24.setMuted(false); // Unmute the video when re-entering the trigger area from below
-  },
-  onLeaveBack: () => {
-    player24.setMuted(true);
-    player24.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
-  },
-});
+      // Set volume based on progress
+      if (progress <= 0.2) {
+        player24.setVolume(progress / 0.2); // Increase volume from 0 to 100% in the first 20%
+      } else if (progress < 0.5) {
+        player24.setVolume(1); // Keep volume at 100% from 20% to 80%
+      } else {
+        player24.setVolume((1 - progress) / 0.5); // Decrease volume from 100% to 0% from 80% to 100%
+      }
+    },
+    onEnter: () => {
+      player24.setMuted(false); // Unmute the video when entering the trigger area
+    },
+    onLeave: () => {
+      player24.setMuted(true);
+      player24.setVolume(0); // Mute and reset the volume when leaving the trigger area
+    },
+    onEnterBack: () => {
+      player24.setMuted(false); // Unmute the video when re-entering the trigger area from below
+    },
+    onLeaveBack: () => {
+      player24.setMuted(true);
+      player24.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
+    },
+  });
+  let iframe555 = document.querySelector("#vimeo-video12");
+  let player555 = new Vimeo.Player(iframe555);
 
-let iframe555 = document.querySelector("#vimeo-video12");
-let player555 = new Vimeo.Player(iframe555);
+  ScrollTrigger.create({
+    trigger: ".home-scroll_text-item.p21p2",
+    start: "-100% 50%",
+    end: "15200 50%",
+    scrub: 1,
+    onUpdate: (self) => {
+      let progress = self.progress; // Get the scroll progress from 0 to 1
 
-ScrollTrigger.create({
-  trigger: ".home-scroll_text-item.p21p2",
-  start: "-100% 50%",
-  end: "15200 50%",
-  scrub: 1,
-  onUpdate: (self) => {
-    let progress = self.progress; // Get the scroll progress from 0 to 1
-
-    // Set volume based on progress
-    if (progress <= 0.05) {
-      player555.setVolume(progress / 0.05); // Increase volume from 0 to 100% in the first 20%
-    } else if (progress < 0.05) {
-      player555.setVolume(1); // Keep volume at 100% from 20% to 80%
-    } else {
-      player555.setVolume((1 - progress) / 0.05); // Decrease volume from 100% to 0% from 80% to 100%
-    }
-  },
-  onEnter: () => {
-    player4.setMuted(false); // Unmute the video when entering the trigger area
-  },
-  onLeave: () => {
-    player4.setMuted(true);
-    player4.setVolume(0); // Mute and reset the volume when leaving the trigger area
-  },
-  onEnterBack: () => {
-    player4.setMuted(false); // Unmute the video when re-entering the trigger area from below
-  },
-  onLeaveBack: () => {
-    player4.setMuted(true);
-    player4.setVolume(0); // Mute and reset the volume when leaving the trigger area from above
-  },
-});
-};
+      // Set volume based on progress
+      if (progress <= 0.05) {
+        // Increase volume from 0 to 1 in the first 5%
+        player555.setVolume(progress / 0.05); // 0 to 1
+      } else if (progress <= 0.85) {
+        // Keep volume at 1 from 5% to 85%
+        player555.setVolume(1); // Full volume
+      } else {
+        // Decrease volume from 1 to 0 from 85% to 100%
+        player555.setVolume((1 - progress) / 0.05); // This will drop the volume quickly
+      }
+    },
+    onEnter: () => {
+      player555.setMuted(false); // Unmute the video when entering the trigger area
+    },
+    onLeave: () => {
+      player555.setMuted(true); // Mute the video when leaving the trigger area
+      player555.setVolume(0); // Ensure the volume is reset to 0
+    },
+    onEnterBack: () => {
+      player555.setMuted(false); // Unmute the video when re-entering the trigger area from below
+    },
+    onLeaveBack: () => {
+      player555.setMuted(true); // Mute the video when leaving the trigger area from above
+      player555.setVolume(0); // Ensure the volume is reset to 0
+    },
+  });
